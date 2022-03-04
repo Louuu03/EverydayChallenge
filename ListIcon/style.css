@@ -149,11 +149,21 @@ footer{
 .change .lineThree{
     animation-name: aniThree;
 }
+.back .lineOne{
+    animation-name: aniOneR;
+}
+.back .lineTwo{
+    animation-name: aniTwoR;
+}
+.back .lineThree{
+    animation-name: aniThreeR;
+}
+
 
 @keyframes aniOne{
     0% {transform: translate(0,0) rotate(0deg);}
     50%{transform: translate(0,30px) rotate(0deg);}
-    100%{transform: translate(0,30px)rotate(45deg);}
+    100%{transform: translate(0,30px) rotate(45deg);}
 }
 @keyframes aniTwo{
     0% {opacity: 1;}
@@ -162,8 +172,23 @@ footer{
 }
 @keyframes aniThree{
     0% {transform: translate(0,0) rotate(0deg);}
-    50%{transform: translate(0,-30px)rotate(0deg);}
+    50%{transform: translate(0,-30px) rotate(0deg);}
     100%{transform: translate(0,-30px) rotate(-45deg);}
+}
+@keyframes aniOneR{
+    0% {transform: translate(0,30px) rotate(45deg);}
+    50%{transform: translate(0,30px) rotate(0deg);}
+    100%{transform: translate(0,0px)rotate(0deg);}
+}
+@keyframes aniTwoR{
+    0% {opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes aniThreeR{
+    0% {transform: translate(0,-30px) rotate(-45deg);}
+    50%{transform: translate(0,-30px) rotate(0deg);}
+    100%{transform: translate(0,0px)rotate(0deg);}
 }
 /* 5. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
