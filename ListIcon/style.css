@@ -2,27 +2,196 @@
 html{
     background-color: beige;
     font-family: 'Fauna One' 'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-left: 5%;
+    padding: 0;
 }
-
 
 /* 2.Position /////////////////////////////////////////////////////*/
+body{
+    margin: 0;
+}
+header{
+    margin: 0;
+}
 .side{
+    display:flex;
+    position: absolute;
     height: 100%;
-    transform: rotate(90deg);
-
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 4%;
+}
+.side div{
+    transform: rotate(90deg);   
+    margin: 40px 0;
+    padding-right: 10px;
+}
+footer{
+        position: absolute;
+        bottom: 0px;
+        width: 94%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+}
+.network{
+    display: inline-flex;
 }
 .network img{
-    height: 50px;
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+}
+.ft{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+#c{
+    padding-left: 3px;
+
+}
+#l{
+    padding-left: 20px;
 }
 .ft img{
     height: 50px;
 }
-
+.BackG{
+    width: 500px;
+    height: 500px;
+    background-color: #8d4343;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
 
 /* 3. Style ///////////////////////////////////////////////////////*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.re{
+    font-size: 10px;
+    text-align: center;
+}
+.title{
+    padding-left: 150px;
+    margin-top: 200px;
 
-
-
-
+}
+h1{
+    font-family:'Cinzel Decorative', cursive;
+    font-size: 5em;
+}
+h2{
+    font-family:'Fauna One', serif;
+    margin-left: 5px;
+}
+.side{
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
+    font-family:'League Gothic', sans-serif ;
+    font-size: 1.5em;
+}
+.side div{
+    cursor: pointer;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.side div:hover{
+    border-bottom: 2px black solid;
+}
+footer{
+    font-family:'Fauna One', serif;
+}
+.ft{
+    font-family: 'Cinzel', serif;;
+}
 
 /* 4.Challenge///////////////////////////////////////////////////*/
+.menu{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+.icon{
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+}
+.lineOne,
+.lineTwo,
+.lineThree{
+    margin: 20px 0px;
+    background-color: white;
+    height:10px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.322);
+    z-index: 30;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.change .lineOne{
+    animation-name: aniOne;
+}
+.change .lineTwo{
+    animation-name: aniTwo;
+}
+.change .lineThree{
+    animation-name: aniThree;
+}
+
+@keyframes aniOne{
+    0% {transform: translate(0,0) rotate(0deg);}
+    50%{transform: translate(0,30px) rotate(0deg);}
+    100%{transform: translate(0,30px)rotate(45deg);}
+}
+@keyframes aniTwo{
+    0% {opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes aniThree{
+    0% {transform: translate(0,0) rotate(0deg);}
+    50%{transform: translate(0,-30px)rotate(0deg);}
+    100%{transform: translate(0,-30px) rotate(-45deg);}
+}
+/* 5. Responsive ///////////////////////////////////////////////*/
+@media only screen and (max-width: 1500px){
+    .BackG{
+        width: 350px;
+        height: 350px;
+        background-color: #8971BD;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px gray;
+        position: static;    
+        margin: auto;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    .side{
+        width: 30px;
+    }
+
+    .title{
+        padding-left:0;
+        margin-top: 0;
+        text-align: center;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
