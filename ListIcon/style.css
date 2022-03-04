@@ -83,6 +83,10 @@ footer{
     right: 10px;
     bottom: 10px;
 }
+.title{
+    padding-left: 150px;
+    margin-top: 200px;
+}
 
 /* 3. Style ///////////////////////////////////////////////////////*/
 a{
@@ -96,7 +100,6 @@ a{
 .title{
     padding-left: 150px;
     margin-top: 200px;
-
 }
 h1{
     font-family:'Cinzel Decorative', cursive;
@@ -168,7 +171,6 @@ footer{
     animation-name: aniThreeR;
 }
 
-
 @keyframes aniOne{
     0% {transform: translate(0,0) rotate(0deg);}
     50%{transform: translate(0,30px) rotate(0deg);}
@@ -215,20 +217,20 @@ footer{
         font-size: 2vw;
     }
     .title{
-        margin-bottom: 20px;
+            padding-left: 100px;
+            margin-top: 190px;
     }
     .BackG img{
         height:2vw;
     }
    
-
 }
 
 @media only screen and (max-height: 700px) {
     footer{
         margin-top: 50px;
         position: static;
-}
+    }
 }
 
 @media only screen and (max-width: 788px){
@@ -260,7 +262,7 @@ footer{
     footer{
         margin-top: 50px;
         position: static;
-}
+    }
     .BackG img{
         height: 20px;
         position: absolute;
