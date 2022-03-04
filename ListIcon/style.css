@@ -16,7 +16,7 @@ header{
 }
 .side{
     display:flex;
-    position: absolute;
+    position: fixed;
     height: 100%;
     top: 0;
     left: 0;
@@ -30,8 +30,9 @@ header{
 }
 .side div{
     transform: rotate(90deg);   
-    margin: 40px 0;
-    padding-right: 10px;
+    margin: 30px 0;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 footer{
         position: absolute;
@@ -72,6 +73,15 @@ footer{
     position: absolute;
     right: 10%;
     top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.BackG img{
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* 3. Style ///////////////////////////////////////////////////////*/
@@ -103,7 +113,6 @@ h2{
 }
 .side div{
     cursor: pointer;
-    padding-left: 10px;
     box-sizing: border-box;
 }
 .side div:hover{
@@ -118,9 +127,9 @@ footer{
 
 /* 4.Challenge///////////////////////////////////////////////////*/
 .menu{
-    position: absolute;
-    top: 40%;
-    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon{
     cursor: pointer;
@@ -193,14 +202,36 @@ footer{
 /* 5. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
     .BackG{
-        width: 350px;
-        height: 350px;
-        background-color: #8971BD;
-        border-radius: 5px;
-        box-shadow: 1px 1px 3px gray;
-        position: static;    
-        margin: auto;
+        width: 30vw;
+        height: 30vw;
+        position: absolute;    
+        top:20%;
+        right:10%
     }
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    .BackG img{
+        height:2vw;
+    }
+   
+
+}
+
+@media only screen and (max-height: 700px) {
+    footer{
+        margin-top: 50px;
+        position: static;
+}
+}
+
+@media only screen and (max-width: 788px){
     body{
         display: flex;
         align-items: center;
@@ -210,7 +241,14 @@ footer{
     .side{
         width: 30px;
     }
-
+    .BackG{
+        width: 350px;
+        height: 350px;
+        position: relative;    
+        margin: auto;
+        top:0;
+        right:0;
+        }
     .title{
         padding-left:0;
         margin-top: 0;
@@ -219,4 +257,14 @@ footer{
     h1{
         font-size: 2em;
     }
+    footer{
+        margin-top: 50px;
+        position: static;
 }
+    .BackG img{
+        height: 20px;
+        position: absolute;
+
+    }
+}
+
