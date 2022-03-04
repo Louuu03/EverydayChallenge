@@ -1,0 +1,28 @@
+/* 1.Basic /////////////////////////////////////////////////////////*/
+html{
+    background-color: beige;
+    font-family: 'Fauna One' 'Times New Roman', Times, serif;
+}
+
+
+/* 2.Position /////////////////////////////////////////////////////*/
+.side{
+    height: 100%;
+    transform: rotate(90deg);
+
+}
+.network img{
+    height: 50px;
+}
+.ft img{
+    height: 50px;
+}
+
+
+/* 3. Style ///////////////////////////////////////////////////////*/
+
+
+
+
+
+/* 4.Challenge///////////////////////////////////////////////////*/
