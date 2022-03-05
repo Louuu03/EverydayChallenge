@@ -67,7 +67,7 @@ footer{
 .BackG{
     width: 500px;
     height: 500px;
-    background-color: #8d4343;
+    background-color: #E79A09;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
     position: absolute;
@@ -75,6 +75,7 @@ footer{
     top: 20%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .BackG img{
@@ -129,78 +130,144 @@ footer{
 }
 
 /* 4.Challenge///////////////////////////////////////////////////*/
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.circle{
+    width: 220px;
+    height: 220px;
+    clip-path: circle(50%);
+    border-radius: 50%;
+    position: relative;
+    
 }
-.icon{
-    cursor: pointer;
-    width: 100px;
-    height: auto;
+.sky{
+    position: static;
+    background-color: #70E4E0;
+    z-index: 0;
+    height: 140px;
+    width: 220px;
+    animation: skyColor 5s  infinite ease-in-out forwards;
 }
-.lineOne,
-.lineTwo,
-.lineThree{
-    margin: 20px 0px;
-    background-color: white;
-    height:10px;
-    width: 100%;
-    border-radius: 3px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.322);
-    z-index: 30;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+.sun{
+    z-index: 1;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #FFBE00;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 0 5px 3px #FFBE00;
 }
-.change .lineOne{
-    animation-name: aniOne;
+.night{
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
 }
-.change .lineTwo{
-    animation-name: aniTwo;
+.moon{
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    box-shadow: inset 3px -3px #FFFC00;
+    z-index: 1;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
-.change .lineThree{
-    animation-name: aniThree;
+.starA{
+    width: 2px;
+    height: 2px;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: #FFE300;
+    position: relative;
+    top: 7px;
+    left: 40px;
+    box-shadow: 0 0 5px 3px #FFFC00;
 }
-.back .lineOne{
-    animation-name: aniOneR;
+.starB{
+    width: 2px;
+    height: 2px;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: #FFE300;
+    position: relative;
+    top: 15px;
+    left: 55px;
+    box-shadow: 0 0 5px 3px #FFFC00;
 }
-.back .lineTwo{
-    animation-name: aniTwoR;
+.left{
+    clip-path: polygon(0 100%, 100% 100%, 50% 0);
+    height: 60px;
+    width: 90px;
+    background-color: #fae6c6;
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    z-index: 2;
 }
-.back .lineThree{
-    animation-name: aniThreeR;
+.right{
+    clip-path: polygon(30% 100%, 100% 100%, 0 0);
+    height: 60px;
+    width: 60px;
+    background-color: #fad79e;
+    position: absolute;
+    top: 90px;
+    left: 105px;
+    z-index: 2;
+}
+.shadow{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    width: 105px;
+    height: 40px;
+    background-color: #2b1c0438;
+    clip-path: polygon(50% 100%, 0% 50%, 100% 50%);
+    z-index: 1;
+}
+.ground{
+    background-color: #fdefae;
+    background-image: repeating-linear-gradient(-45deg, #ffe573, #f8de6a 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    height: 140px;
+    width: 220px;
+    position: absolute;
+    top: 140px;
 }
 
-@keyframes aniOne{
-    0% {transform: translate(0,0) rotate(0deg);}
-    50%{transform: translate(0,30px) rotate(0deg);}
-    100%{transform: translate(0,30px) rotate(45deg);}
-}
-@keyframes aniTwo{
-    0% {opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 0;}
-}
-@keyframes aniThree{
-    0% {transform: translate(0,0) rotate(0deg);}
-    50%{transform: translate(0,-30px) rotate(0deg);}
-    100%{transform: translate(0,-30px) rotate(-45deg);}
-}
-@keyframes aniOneR{
-    0% {transform: translate(0,30px) rotate(45deg);}
-    50%{transform: translate(0,30px) rotate(0deg);}
-    100%{transform: translate(0,0px)rotate(0deg);}
-}
-@keyframes aniTwoR{
-    0% {opacity: 0;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
-}
-@keyframes aniThreeR{
-    0% {transform: translate(0,-30px) rotate(-45deg);}
-    50%{transform: translate(0,-30px) rotate(0deg);}
-    100%{transform: translate(0,0px)rotate(0deg);}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 5. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
     .BackG{
@@ -266,12 +333,22 @@ footer{
     .BackG img{
         height: 20px;
         position: absolute;
-
     }
 }
 @media only screen and (max-width: 512px){
     .BackG{
-        width: 175px;
-        height: 175px;
+        width: 200px;
+        height: 200px;
         } 
+    h2{
+        font-size: 0.75em;
+    }
+}
+@media only screen and (max-height: 700px){
+    .title{
+        margin-top: 20vh;
+    }
+    footer{
+        margin-top: 80px;
+    }
 }
