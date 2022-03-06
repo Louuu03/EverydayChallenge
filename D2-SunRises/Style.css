@@ -295,35 +295,6 @@ footer{
     100%{background-color: #fad79e;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 5. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
     .BackG{
@@ -393,8 +364,8 @@ footer{
 }
 @media only screen and (max-width: 512px){
     .BackG{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         } 
     h2{
         font-size: 0.75em;
