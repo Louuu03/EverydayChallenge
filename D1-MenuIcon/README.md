@@ -14,10 +14,6 @@ Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilCha
 Mainly CSS, plus some HTML and JavaScript.
 
 
-## Inspiration
-Inspired by:
-
-
 ## HighLights
 * Easy JavaScript to toggle
     1.  ``` classList.add ``` and  ``` classList.remove ```

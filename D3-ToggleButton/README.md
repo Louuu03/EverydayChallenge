@@ -12,9 +12,6 @@ Here is the website: [Day 3- Toggle Button](https://louuu03.github.io/EverydayLi
 Mainly CSS, plus some HTML and JavaScript.
 
 
-## Inspiration
-Inspired by:
-
 
 ## HighLights
 * ``` overflow: hidden ``` :

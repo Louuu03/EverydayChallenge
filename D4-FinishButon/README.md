@@ -1,8 +1,8 @@
 # Day 1 Menu Icon
 ## Introduction
-It is a animated menu icon if you click on it.
+It is a animated finish button.
 
-Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/MenuIcon.html)
+Here is the website: [Day 4- Finish Button](https://louuu03.github.io/EverydayLilChallenge/D4-FinishButton/FinishButton.html)
 
 
 ![alt text](./Icon/gif.gif)
@@ -14,15 +14,10 @@ Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilCha
 Mainly CSS, plus some HTML and JavaScript.
 
 
-## Inspiration
-Inspired by:
-
-
 ## HighLights
-* Easy JavaScript to toggle
-    1.  ``` classList.add ``` and  ``` classList.remove ```
-    2. A class only in CSS to call animation by using codes above
+* Concept of SVG and SVG circle.
+*  ``` stroke-dashoffset``` and ``` stroke-dasharray```
 
 
 ## Problem faced
-* How to use ``` classList.toggle ``` to make the animation reverse to the origin status?
+* It seems that ``` classList.add ``` and  ``` classList.remove ``` can't add SVG directly.
