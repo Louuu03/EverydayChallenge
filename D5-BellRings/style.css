@@ -132,7 +132,6 @@ footer{
 /* 4.Challenge///////////////////////////////////////////////////*/
 .all{
     width: 200px;
-    border: red 1px solid;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -141,10 +140,10 @@ footer{
 .bellAll{
     transform: scale(0.5,0.5);
     width: 150px;
+    top: 35px;
     position: relative;
-
-}
-.bell{
+    transform-origin: top center;
+    cursor: pointer;
 }
 .shadow{
     stroke: rgba(99, 99, 99, 0.733);
@@ -157,51 +156,147 @@ footer{
     top: 0px;
     left: 70px;
     height: 140px;
-    border: red 1px solid;
 }
 .leftA{
-    border: red 1px solid;
-    transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5) ;
     position: absolute;
-    right: 0;
+    right: 0; 
+    opacity: 0;   
 }
 .leftB{
     position: absolute;
-    border: red 1px solid;
     transform: scale(0.5,0.5);
     right: 0;
+    opacity: 0;
 }
 .leftC{
     position: absolute;
-    border: orange 1px solid;
     transform: scale(0.5,0.5);
     right: 0;
+    opacity: 0;
 }
 .right{
     position: absolute;
     top: 0px;
     right: 70px;
     height: 140px;
-    border: red 1px solid;
 }
 .rightA{
     position: absolute;
     transform: scale(0.5,0.5);
-    border: brown 1px solid;
-    left: 5px;
+    left: 6px;
+    opacity: 0;
 }
 .rightB{
     position: absolute;
-    border: orange 1px solid;
     transform: scale(0.5,0.5);
-    left: 5px;
+    left: 6px;
+    opacity: 0;
 }
 .rightC{
     position: absolute;
-    border: purple 1px solid;
     transform: scale(0.5,0.5);
-    left: 5px;
+    left: 6px;
+    opacity: 0;
 }
+
+
+.change .bellAll{
+    animation: ring forwards 1s ease-out infinite;
+}
+.change .left .leftA{
+    animation: left 2.1s infinite forwards;
+}
+.change .left .leftB{
+    animation: left 2.1s infinite forwards; 
+    animation-delay:0.7s;
+}
+.change .left .leftC{
+    animation: left 2.1s infinite forwards;
+    animation-delay:1.4s;
+}
+.change .right .rightA{
+    animation: right 2.1s infinite forwards;
+}
+.change .right .rightB{
+    animation: right 2.1s infinite forwards;
+    animation-delay:0.7s;
+}
+.change .right .rightC{
+    animation: right 2.1s infinite forwards;
+    animation-delay:1.4s;
+}
+
+.back .bellAll{
+    animation: ringStop forwards 2.7s ease-out ;
+}
+.back .left .leftA{
+    animation: leftS 2.7s forwards;
+}
+.back .left .leftB{
+    animation: leftS 2.7s forwards;
+    animation-delay:1s;
+}
+.back .left .leftC{
+    animation: leftS 2.7s forwards;
+    animation-delay:2.1s;
+}
+.back .right .rightA{
+    animation: rightS 2.7s forwards;
+}
+.back .right .rightB{
+    animation: rightS 2.7s forwards;
+    animation-delay:1s;
+}
+.back .right .rightC{
+    animation: rightS 2.7s forwards;
+    animation-delay: 2.1s;
+}
+
+@keyframes ring {
+    0%{transform:scale(0.5,0.5) rotate(0deg);}
+    5%{transform:scale(0.5,0.5) rotate(5deg);}
+    15%{transform:scale(0.5,0.5) rotate(-5deg);}
+    25%{transform:scale(0.5,0.5) rotate(5deg);}
+    35%{transform:scale(0.5,0.5) rotate(-5deg);}
+    45%{transform:scale(0.5,0.5) rotate(5deg);}
+    55%{transform:scale(0.5,0.5) rotate(-5deg);}
+    65%{transform:scale(0.5,0.5) rotate(5deg);}
+    75%{transform:scale(0.5,0.5) rotate(-5deg);}
+    85%{transform:scale(0.5,0.5) rotate(5deg);}
+    95%{transform:scale(0.5,0.5) rotate(-5deg);}
+    100%{transform:scale(0.5,0.5) rotate(0deg);}
+}
+@keyframes left{
+    0%{transform: scale(0.5,0.5) translate(0,0);opacity:1;}
+    100%{transform: scale(0.8,0.8) translate(-45px,0);opacity: 0;}
+}
+@keyframes right{
+    0%{transform: scale(0.5,0.5) translate(0,0);opacity:1;}
+    100%{transform: scale(0.8,0.8) translate(45px,0);opacity: 0;}
+}
+@keyframes leftS{
+    0%{transform: scale(0.5,0.5) translate(0,0);opacity:1;}
+    100%{transform: scale(0.8,0.8) translate(-45px,0);opacity: 0;}
+}
+@keyframes rightS{
+    0%{transform: scale(0.5,0.5) translate(0,0);opacity:1;}
+    100%{transform: scale(0.8,0.8) translate(45px,0);opacity: 0;}
+}
+
+@keyframes ringStop {
+    0%{transform:scale(0.5,0.5) rotate(0deg);}    
+    5%{transform:scale(0.5,0.5) rotate(5deg);}
+    10%{transform:scale(0.5,0.5) rotate(-5deg);}
+    15%{transform:scale(0.5,0.5) rotate(5deg);}
+    20%{transform:scale(0.5,0.5) rotate(-5deg);}
+    30%{transform:scale(0.5,0.5) rotate(7deg);}
+    40%{transform:scale(0.5,0.5) rotate(-7deg);}
+    65%{transform:scale(0.5,0.5) rotate(7deg);}
+    83%{transform:scale(0.5,0.5) rotate(-7deg);}
+    100%{transform:scale(0.5,0.5) rotate(0deg);}
+}
+
 
 
 /* 5. Responsive ///////////////////////////////////////////////*/

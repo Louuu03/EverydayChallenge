@@ -1,5 +1,7 @@
 # Everyday Little Challenge
+
 ## Introduction
+
 This is a daily challenge of mainly animation.
 
 I always found those animation on websites amazing, so I decided to dig into some cool but little ones to practice everyday. I hope my work can help other people learn and understand more about animation and some usage and as well motivate them. 
@@ -10,18 +12,22 @@ Here is the website of the challenge:
 [Everyday Little Challenge](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/index.html)
 
 ## Technologies
+
 Mainly CSS, plus some HTML and JavaScript.
 
 
 ## Contents
+
 * [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/index.html)
 * [Day 2- Sun Rises](https://louuu03.github.io/EverydayLilChallenge/D2-SunRises/index.html)
 * [Day 3- Toggle Button](https://louuu03.github.io/EverydayLilChallenge/D3-ToggleButton/index.html)
 * [Day 4- Finish Button](https://louuu03.github.io/EverydayLilChallenge/D4-FinishButton/index.html)
-* [Day 5- Ring](https://louuu03.github.io/EverydayLilChallenge/D5-Ring/index.html)
+* [Day 5- BellRings](https://louuu03.github.io/EverydayLilChallenge/D5-BellRings/index.html)
 
 
 ## Source and Inspiration
+
 I searched some ideas and learned from various websites. Here are the main ones that I use:
+
 * [100 DAYS CSS CHALLENGE](https://100dayscss.com/about/)
 * [🤯 30DaysChallenge - 30 Days Extreme HTML & CSS CHALLENGE 🤯](https://dev.to/somanathgoudar/30dayschallenge-30-days-extreme-html-css-challenge-50k1)
