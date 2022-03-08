@@ -1,0 +1,290 @@
+/* 1.Basic /////////////////////////////////////////////////////////*/
+html{
+    background-color: beige;
+    font-family: 'Fauna One' 'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-left: 5%;
+    padding: 0;
+}
+
+/* 2.Position /////////////////////////////////////////////////////*/
+body{
+    margin: 0;
+}
+header{
+    margin: 0;
+}
+.side{
+    display:flex;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 4%;
+}
+.side div{
+    transform: rotate(90deg);   
+    margin: 30px 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+footer{
+        position: absolute;
+        bottom: 0px;
+        width: 94%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+}
+.network{
+    display: inline-flex;
+}
+.network img{
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+}
+.ft{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+#c{
+    padding-left: 3px;
+
+}
+#l{
+    padding-left: 20px;
+}
+.ft img{
+    height: 50px;
+}
+.BackG{
+    width: 500px;
+    height: 500px;
+    background-color: #34495E ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.BackG img{
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.title{
+    padding-left: 150px;
+    margin-top: 200px;
+}
+
+/* 3. Style ///////////////////////////////////////////////////////*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.re{
+    font-size: 10px;
+    text-align: center;
+}
+.title{
+    padding-left: 150px;
+    margin-top: 200px;
+}
+h1{
+    font-family:'Cinzel Decorative', cursive;
+    font-size: 5em;
+}
+h2{
+    font-family:'Fauna One', serif;
+    margin-left: 5px;
+}
+.side{
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
+    font-family:'League Gothic', sans-serif ;
+    font-size: 1.5em;
+}
+.side div{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.side div:hover{
+    border-bottom: 2px black solid;
+}
+footer{
+    font-family:'Fauna One', serif;
+}
+.ft{
+    font-family: 'Cinzel', serif;;
+}
+
+/* 4.Challenge///////////////////////////////////////////////////*/
+.all{
+    width: 200px;
+    border: red 1px solid;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bellAll{
+    transform: scale(0.5,0.5);
+    width: 150px;
+    position: relative;
+
+}
+.bell{
+}
+.shadow{
+    stroke: rgba(99, 99, 99, 0.733);
+    position: absolute;
+    bottom: 5.5px;
+    left: 53.5px;
+}
+.left{
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    height: 140px;
+    border: red 1px solid;
+}
+.leftA{
+    border: red 1px solid;
+    transform: scale(0.5,0.5);
+    position: absolute;
+    right: 0;
+}
+.leftB{
+    position: absolute;
+    border: red 1px solid;
+    transform: scale(0.5,0.5);
+    right: 0;
+}
+.leftC{
+    position: absolute;
+    border: orange 1px solid;
+    transform: scale(0.5,0.5);
+    right: 0;
+}
+.right{
+    position: absolute;
+    top: 0px;
+    right: 70px;
+    height: 140px;
+    border: red 1px solid;
+}
+.rightA{
+    position: absolute;
+    transform: scale(0.5,0.5);
+    border: brown 1px solid;
+    left: 5px;
+}
+.rightB{
+    position: absolute;
+    border: orange 1px solid;
+    transform: scale(0.5,0.5);
+    left: 5px;
+}
+.rightC{
+    position: absolute;
+    border: purple 1px solid;
+    transform: scale(0.5,0.5);
+    left: 5px;
+}
+
+
+/* 5. Responsive ///////////////////////////////////////////////*/
+@media only screen and (max-width: 1500px){
+    .BackG{
+        width: 30vw;
+        height: 30vw;
+        position: absolute;    
+        top:20%;
+        right:10%
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    .title{
+            padding-left: 100px;
+            margin-top: 190px;
+    }
+    .BackG img{
+        height:2vw;
+    }
+   
+}
+
+@media only screen and (max-height: 700px) {
+    footer{
+        margin-top: 50px;
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 788px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    .side{
+        width: 30px;
+    }
+    .BackG{
+        width: 350px;
+        height: 350px;
+        position: relative;    
+        margin: auto;
+        top:0;
+        right:0;
+        }
+    .title{
+        padding-left:0;
+        margin-top: 0;
+        text-align: center;
+    }
+    h1{
+        font-size: 2em;
+    }
+    footer{
+        margin-top: 50px;
+        position: static;
+    }
+    .BackG img{
+        height: 20px;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 512px){
+    .BackG{
+        width: 250px;
+        height: 250px;
+        } 
+    h2{
+        font-size: 0.75em;
+    }
+}
+@media only screen and (max-height: 700px){
+    .title{
+        margin-top: 5vh;
+    }
+    footer{
+        margin-top: 80px;
+    }
+}
