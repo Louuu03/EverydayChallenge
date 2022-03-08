@@ -2,7 +2,7 @@
 ## Introduction
 It is a animation of a toggle button that rotates after clicking on it.
 
-Here is the website: [Day 3- Toggle Button](https://louuu03.github.io/EverydayLilChallenge/D3-ToggleButton/ToggleButton.html)
+Here is the website: [Day 3- Toggle Button](https://louuu03.github.io/EverydayLilChallenge/D3-ToggleButton/index.html)
 
 
 ![alt text](./Icon/gif.gif)

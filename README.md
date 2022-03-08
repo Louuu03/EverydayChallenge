@@ -7,17 +7,18 @@ I always found those animation on websites amazing, so I decided to dig into som
 However, I always have a lot of problems while coding. If anything confuses you and you can't find the answer of it, or you figure out mistakes or have better solution, feel free to reach me out on Tweeter([@Lou_yiw](https://twitter.com/Lou_yiw)).
 
 Here is the website of the challenge:
-[Everyday Little Challenge](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/MenuIcon.html)
+[Everyday Little Challenge](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/index.html)
 
 ## Technologies
 Mainly CSS, plus some HTML and JavaScript.
 
 
 ## Contents
-* [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/MenuIcon.html)
-* [Day 2- Sun Rises](https://louuu03.github.io/EverydayLilChallenge/D2-SunRises/SunRises.html)
-* [Day 3- Toggle Button](https://louuu03.github.io/EverydayLilChallenge/D3-ToggleButton/ToggleButton.html)
-* [Day 4- Finish Button](https://louuu03.github.io/EverydayLilChallenge/D4-FinishButton/FinishButton.html)
+* [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/index.html)
+* [Day 2- Sun Rises](https://louuu03.github.io/EverydayLilChallenge/D2-SunRises/index.html)
+* [Day 3- Toggle Button](https://louuu03.github.io/EverydayLilChallenge/D3-ToggleButton/index.html)
+* [Day 4- Finish Button](https://louuu03.github.io/EverydayLilChallenge/D4-FinishButton/index.html)
+* [Day 5- Ring](https://louuu03.github.io/EverydayLilChallenge/D5-Ring/index.html)
 
 
 ## Source and Inspiration

@@ -2,7 +2,7 @@
 ## Introduction
 It is a animation of sun and moon rise and set.
 
-Here is the website: [Day 2- Sun Rises](https://louuu03.github.io/EverydayLilChallenge/D2-SunRises/SunRises.html)
+Here is the website: [Day 2- Sun Rises](https://louuu03.github.io/EverydayLilChallenge/D2-SunRises/index.html)
 
 
 ![alt text](./Icon/gif.gif)

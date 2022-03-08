@@ -67,7 +67,7 @@ footer{
 .BackG{
     width: 500px;
     height: 500px;
-    background-color: #E79A09;
+    background-color: #2E86C1 ;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
     position: absolute;
@@ -346,7 +346,7 @@ footer{
 }
 @media only screen and (max-height: 700px){
     .title{
-        margin-top: 20vh;
+        margin-top: 5vh;
     }
     footer{
         margin-top: 80px;

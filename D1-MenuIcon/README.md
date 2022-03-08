@@ -2,7 +2,7 @@
 ## Introduction
 It is a animated menu icon if you click on it.
 
-Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/MenuIcon.html)
+Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/index.html)
 
 
 ![alt text](./Icon/gif.gif)

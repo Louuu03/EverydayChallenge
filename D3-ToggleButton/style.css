@@ -304,7 +304,7 @@ footer{
 }
 @media only screen and (max-height: 700px){
     .title{
-        margin-top: 20vh;
+        margin-top: 5vh;
     }
     footer{
         margin-top: 80px;
