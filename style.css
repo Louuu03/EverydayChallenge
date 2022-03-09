@@ -17,8 +17,6 @@ header{
     background-color: beige;
     margin: 0;
     position: relative;
-    border: 1px rgb(255, 0, 0) solid;
-    align-items: flex-start;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -85,12 +83,16 @@ footer{
     opacity: 1;
     width: 400px;
     height: 400px;
-    background-color: #E79A09;
+    background-color: beige;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+.BackG h2{
+    text-align: center;
 }
 .title{
     opacity: 1;
@@ -117,18 +119,41 @@ footer{
     z-index: 0;
 }
 .pics{
-    min-height:100%;
     display: flex;
     justify-content: center;
+    height: auto;
+    flex-direction: row;
+    margin-bottom: 50px;
 }
 .days{
     width: 200px;
     height: 200px;
     text-align: center;
+    padding:  0 30px;
 }
 .days img{
     width: 200px;
     height: 200px;
+    cursor: pointer;
+}
+.gif{
+    display: none;
+}
+.BigGif{
+    width: 100%;
+    display: none;
+}
+.arrow img{
+    height: 50px;
+}
+.arrow{
+    font-size: 0.6em;
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 40px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.582);
+    margin-right: 10%;
 }
 /* 3. Style ///////////////////////////////////////////////////////*/
 a{
@@ -148,6 +173,7 @@ h1{
 h2{
     font-family:'Fauna One', serif;
     margin-left: 5px;
+    font-weight: 400;
 }
 .title h2{
     margin: 0;
@@ -170,9 +196,19 @@ footer{
 .LG{
     font-family: 'Cinzel', serif;
 }
+.pics{
+    font-family:'Fauna One', serif;
+    font-weight: 600;
+}
 h3{
     font-size: 2em;
-
+}
+.BackG h2{
+    color: gray;
+}
+.home{
+    border-bottom: 2px black solid;
+}
 /* 4. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
     .BackG{
@@ -194,7 +230,6 @@ h3{
     .BackG img{
         height:2vw;
     }
-   
 }
 
 @media only screen and (max-height: 700px) {
