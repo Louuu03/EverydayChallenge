@@ -1,0 +1,250 @@
+/* 1.Basic /////////////////////////////////////////////////////////*/
+html{
+    background-color: beige;
+    font-family: 'Fauna One' 'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-left: 5%;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 2.Position /////////////////////////////////////////////////////*/
+body{
+    margin-top: 540px ;
+}
+header{
+    background-color: beige;
+    margin: 0;
+    position: relative;
+    border: 1px rgb(255, 0, 0) solid;
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+}
+.side{
+    display:flex;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 4%;
+    z-index: 50;
+}
+.side div{
+    transform: rotate(90deg);   
+    margin: 30px 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+footer{
+        position: static;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+}
+.LG{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+.LG img{
+    height: 70px;
+}
+.network{
+    display: inline-flex;
+    margin-left: 50px;
+}
+.network img{
+    height: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    align-items: center;
+}
+.Name{
+    margin-left: 10px;
+}
+.BackG{
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+    background-color: #E79A09;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    opacity: 1;
+    width: 500px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+.start{
+    opacity: 0;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}
+.shadow{
+    width: 200%;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: -10%;
+    box-shadow: 0px 6px  3px rgba(0,0,0,0.6);
+    z-index: 0;
+}
+.pics{
+    min-height:100%;
+    display: flex;
+    justify-content: center;
+}
+.days{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.days img{
+    width: 200px;
+    height: 200px;
+}
+/* 3. Style ///////////////////////////////////////////////////////*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.re{
+    font-size: 10px;
+    text-align: center;
+}    
+h1{
+    margin: 0;
+    font-family:'Cinzel Decorative', cursive;
+    font-size: 4em;
+    width: 500px;
+}
+h2{
+    font-family:'Fauna One', serif;
+    margin-left: 5px;
+}
+.title h2{
+    margin: 0;
+}
+.side{
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
+    font-family:'League Gothic', sans-serif ;
+    font-size: 1.5em;
+}
+.side div{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.side div:hover{
+    border-bottom: 2px black solid;
+}
+footer{
+    font-family:'Fauna One', serif;
+}
+.LG{
+    font-family: 'Cinzel', serif;
+}
+h3{
+    font-size: 2em;
+
+/* 4. Responsive ///////////////////////////////////////////////*/
+@media only screen and (max-width: 1500px){
+    .BackG{
+        width: 30vw;
+        height: 30vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    .title{
+            padding-left: 100px;
+    }
+    .title h2{
+        margin-top: -20px;
+    }
+    .BackG img{
+        height:2vw;
+    }
+   
+}
+
+@media only screen and (max-height: 700px) {
+    footer{
+        margin-top: 50px;
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 788px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    .side{
+        width: 30px;
+    }
+    .BackG{
+        width: 350px;
+        height: 350px;
+        }
+    .title{
+        padding-left:0;
+        margin-top: 0;
+        text-align: center;
+    }
+    h1{
+        font-size: 2em;
+    }
+    footer{
+        margin-top: 50px;
+        position: static;
+    }
+}
+@media only screen and (max-width: 512px){
+    .BackG{
+        width: 250px;
+        height: 250px;
+        } 
+    h2{
+        font-size: 0.75em;
+    }
+}
+@media only screen and (max-height: 700px){
+    .title{
+        margin-top: 5vh;
+    }
+    footer{
+        margin-top: 80px;
+    }
+}
