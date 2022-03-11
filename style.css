@@ -1,4 +1,3 @@
-/* 1.Basic /////////////////////////////////////////////////////////*/
 html{
     background-color: beige;
     font-family: 'Fauna One' 'Times New Roman', Times, serif;
@@ -8,26 +7,26 @@ html{
     overflow-x: hidden;
     position: relative;
 }
-
-/* 2.Position /////////////////////////////////////////////////////*/
 body{
-    margin-top: 540px ;
+    margin-top: 40px ;
 }
-header{
-    background-color: beige;
+/*Common//////////////////*/
+h1{
     margin: 0;
-    position: relative;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-    position:fixed;
-    top: 0px;
+    font-family:'Cinzel Decorative', cursive;
+    font-size: 4em;
+    width: auto;
 }
+h2{
+    font-family:'Fauna One', serif;
+    color: gray;
+    font-size: 10px;
+
+}
+h3{
+    font-size: 2em;
+}
+/*Side Bar/////////////////////*/
 .side{
     display:flex;
     position: fixed;
@@ -42,26 +41,53 @@ header{
     align-items: center;
     width: 4%;
     z-index: 50;
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
+    font-family:'League Gothic', sans-serif ;
+    font-size: 1.5em;
 }
 .side div{
     transform: rotate(90deg);   
     margin: 30px 0;
     padding-right: 5px;
     padding-left: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
-footer{
-        position: static;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+.side div:hover{
+    border-bottom: 2px black solid;
+}
+.home{
+    border-bottom: 2px black solid;
+}
+/*Header//////////////////////////////*/
+header{
+    background-color: beige;
+    margin: 0;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    height: 530px;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+}
+.empty{
+    width: 100%;
+    height: 530px;
 }
 .LG{
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     position: absolute;
-    top: -15px;
+    top: 0;
+    margin-top:-15px ;
     left: 0;
+    font-family: 'Cinzel', serif;
 }
 .LG img{
     height: 70px;
@@ -89,25 +115,23 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: 70px;
 }
 .BackG h2{
     text-align: center;
 }
 .title{
-    opacity: 1;
-    width: 500px;
+    width: auto;
     overflow: hidden;
     margin-right: 50px;
+    margin-top: 50px;
 }
-.start{
-    opacity: 0;
-    position: absolute;
-    top: 90px;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-    z-index: 5;
+.title h2{
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    width: 25vw;
 }
 .shadow{
     width: 200%;
@@ -118,18 +142,25 @@ footer{
     box-shadow: 0px 6px  3px rgba(0,0,0,0.6);
     z-index: 0;
 }
+
+
+/*Body////////////////////////////*/
 .pics{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     height: auto;
     flex-direction: row;
-    margin-bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family:'Fauna One', serif;
+    font-weight: 600;
 }
 .days{
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
     text-align: center;
     padding:  0 30px;
+    margin-bottom: 30px;
 }
 .days img{
     width: 200px;
@@ -147,15 +178,23 @@ footer{
     height: 50px;
 }
 .arrow{
-    font-size: 0.6em;
     display: inline-flex;
     flex-direction: row;
     margin-left: 40px;
     align-items: center;
     color: rgba(0, 0, 0, 0.582);
     margin-right: 10%;
+    opacity: 1;
 }
-/* 3. Style ///////////////////////////////////////////////////////*/
+
+/*Footer///////////////////*/
+footer{
+    position: static;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Fauna One', serif;
+}
 a{
     text-decoration: none;
     color: black;
@@ -163,116 +202,118 @@ a{
 .re{
     font-size: 10px;
     text-align: center;
-}    
-h1{
-    margin: 0;
-    font-family:'Cinzel Decorative', cursive;
-    font-size: 4em;
-    width: 500px;
-}
-h2{
-    font-family:'Fauna One', serif;
-    margin-left: 5px;
-    font-weight: 400;
-}
-.title h2{
-    margin: 0;
-}
-.side{
-    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
-    font-family:'League Gothic', sans-serif ;
-    font-size: 1.5em;
-}
-.side div{
-    cursor: pointer;
-    box-sizing: border-box;
-}
-.side div:hover{
-    border-bottom: 2px black solid;
-}
-footer{
-    font-family:'Fauna One', serif;
-}
-.LG{
-    font-family: 'Cinzel', serif;
-}
-.pics{
-    font-family:'Fauna One', serif;
-    font-weight: 600;
-}
-h3{
-    font-size: 2em;
-}
-.BackG h2{
-    color: gray;
-}
-.home{
-    border-bottom: 2px black solid;
-}
-/* 4. Responsive ///////////////////////////////////////////////*/
+}  
+/*Responsive ///////////////////////////////////////////////
 @media only screen and (max-width: 1500px){
     .BackG{
-        width: 30vw;
-        height: 30vw;
+        width: 17vw;
+        height: 17vw;
     }
     h1{
-        font-size: 5vw;
-    }
-    h2{
-        font-size: 2vw;
+        font-size: 2.5vw;
+    
     }
     .title{
             padding-left: 100px;
     }
     .title h2{
-        margin-top: -20px;
+        margin-top: 10px;
     }
     .BackG img{
         height:2vw;
     }
-}
-
-@media only screen and (max-height: 700px) {
-    footer{
-        margin-top: 50px;
-        position: static;
+    body{
+        background-color: aquamarine;
+        font-size: 1.5vw;
+        margin-top: 4vw;
+    }
+    header{
+        height: 28vw;
+        min-height: 300px;
+    }
+    .LG h3{
+        font-size: 1.1em;
+    }
+    .LG img{
+        height: 3vw;
+    }
+    .network img{
+        height: 17px;
+    }
+    .days img{
+        width: 150px;
+        height: 150px;
+    }
+    .empty{
+        height: 28vw;
+        min-height: 300px;
     }
 }
+
 
 @media only screen and (max-width: 788px){
-    body{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        flex-direction: column;
-    }
     .side{
         width: 30px;
     }
     .BackG{
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
+        flex-shrink: 0;
         }
     .title{
         padding-left:0;
+        margin: 0;
         margin-top: 0;
-        text-align: center;
+        width: auto;
     }
     h1{
-        font-size: 2em;
+        font-size: 1.5em;
+        width: auto;
     }
-    footer{
-        margin-top: 50px;
-        position: static;
+    .arrow img{
+        height: 40px;
     }
 }
-@media only screen and (max-width: 512px){
+@media only screen and (max-width: 680px){
+    .header{
+        flex-direction: row;
+    }
+    .title{
+        width: 100%;
+    }
     .BackG{
         width: 250px;
         height: 250px;
         } 
-    h2{
-        font-size: 0.75em;
+}
+@media only screen and (max-height:1200px) {
+    h1{
+        font-size: 35px;
+    }
+    .title h2{
+        font-size: 15px;
+    }
+    .title{
+        padding-left: 10px;
+        width: 270px;
+    }
+}@media only screen and (max-height: 750px) {
+    footer{
+        margin-top: 50px;
+        position: static;
+    }
+    .BackG{
+    height: 220px;
+    width: 220px;
+    background-color: aquamarine;
+    }
+    header{
+        height: 30vh;
+        min-height: 300px;;
+    }
+    .empty{
+        height: 30vh;
+        min-height: 300px;
     }
 }
 @media only screen and (max-height: 700px){
@@ -282,4 +323,4 @@ h3{
     footer{
         margin-top: 80px;
     }
-}
+}*/
