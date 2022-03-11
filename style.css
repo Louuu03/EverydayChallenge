@@ -9,6 +9,7 @@ html{
 }
 body{
     margin-top: 40px ;
+    z-index: 0;
 }
 /*Common//////////////////*/
 h1{
@@ -19,9 +20,8 @@ h1{
 }
 h2{
     font-family:'Fauna One', serif;
-    color: gray;
-    font-size: 10px;
-
+    color: rgb(170, 170, 170);
+    font-size: 17px;
 }
 h3{
     font-size: 2em;
@@ -36,6 +36,7 @@ h3{
     background-color: white;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-items: center;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -43,7 +44,7 @@ h3{
     z-index: 50;
     box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
     font-family:'League Gothic', sans-serif ;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .side div{
     transform: rotate(90deg);   
@@ -52,6 +53,7 @@ h3{
     padding-left: 5px;
     cursor: pointer;
     box-sizing: border-box;
+    line-height: 0.9em;
 }
 .side div:hover{
     border-bottom: 2px black solid;
@@ -62,7 +64,6 @@ h3{
 /*Header//////////////////////////////*/
 header{
     background-color: beige;
-    margin: 0;
     position: relative;
     display: inline-flex;
     flex-direction: row;
@@ -74,6 +75,7 @@ header{
     width: 100%;
     position:fixed;
     top: 0px;
+
 }
 .empty{
     width: 100%;
@@ -85,7 +87,6 @@ header{
     align-items: center;
     position: absolute;
     top: 0;
-    margin-top:-15px ;
     left: 0;
     font-family: 'Cinzel', serif;
 }
@@ -106,9 +107,9 @@ header{
     margin-left: 10px;
 }
 .BackG{
-    opacity: 1;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
     background-color: beige;
     border-radius: 5px;
     box-shadow: 1px 1px 3px gray;
@@ -118,57 +119,27 @@ header{
     flex-shrink: 0;
     margin-top: 70px;
 }
-.BackG h2{
-    text-align: center;
-}
 .title{
     width: auto;
     overflow: hidden;
     margin-right: 50px;
     margin-top: 50px;
+    width: 35vw;
 }
 .title h2{
     margin: 0;
     font-weight: 500;
     font-size: 20px;
-    width: 25vw;
+    color: black;
 }
 .shadow{
-    width: 200%;
+    width: 110%;
     height: 5px;
     position: absolute;
     bottom: 0px;
     left: -10%;
     box-shadow: 0px 6px  3px rgba(0,0,0,0.6);
-    z-index: 0;
-}
 
-
-/*Body////////////////////////////*/
-.pics{
-    display: inline-flex;
-    justify-content: center;
-    height: auto;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    font-family:'Fauna One', serif;
-    font-weight: 600;
-}
-.days{
-    width: auto;
-    height: auto;
-    text-align: center;
-    padding:  0 30px;
-    margin-bottom: 30px;
-}
-.days img{
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-}
-.gif{
-    display: none;
 }
 .BigGif{
     width: 100%;
@@ -185,6 +156,39 @@ header{
     color: rgba(0, 0, 0, 0.582);
     margin-right: 10%;
     opacity: 1;
+    margin-top: 70px;
+}
+
+
+/*Body////////////////////////////*/
+.pics{
+    display: inline-flex;
+    justify-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family:'Fauna One', serif;
+    font-weight: 600;
+}
+.days{
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding:  0 30px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.days img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.gif{
+    display: none;
 }
 
 /*Footer///////////////////*/
@@ -203,7 +207,139 @@ a{
     font-size: 10px;
     text-align: center;
 }  
-/*Responsive ///////////////////////////////////////////////
+/*Responsive ///////////////////////////////////////////////*/
+@media only screen and (max-width:1300px), only screen and (max-height:850px) {
+    body{
+        font-size: 2vw;
+    }
+    header{
+        height: 400px;
+    }
+    .empty{
+        height: 400px;
+    }
+    .BackG{
+        width: 30vw;
+        height: 30vw;
+        margin-top: 1vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .title, .arrow{
+        margin-top: 1vw;
+    }
+    .title{
+        width: 30vw;
+    }
+    h1{
+        font-size: 3vw;
+    
+    }
+    .title h2{
+        margin-top: 10px;
+    }
+
+    .LG h3{
+        font-size: 1.1em;
+    }
+    .LG img{
+        height: 5vw;
+    }
+    .network img{
+        height: 2vw;
+    }
+    .side{
+        width: 35px;
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-height: 850px) and (max-width:800px), only screen and (max-width: 800px) {
+    html{
+        left: 5px;
+    }
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    .empty{
+        height: 400px;
+    }
+    .title{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 0.6em;
+    }
+    .title h2{
+        width:75%;
+        font-size: 0.75em;
+    }
+    .BackG{
+        width: 200px;
+        height: 200px;
+        margin-left: 15%;
+    }
+    body{
+        font-size: 1em;
+    }
+    .days{
+        margin-left: 15px;
+        margin-right: 15px ;
+    }
+    .days img{
+        height: 175px;
+        width: 175px;
+    }
+    .LG{
+        width: 100%;
+    }
+    .LG h3{
+        font-size: 1.1em;
+    }
+    .LG img{
+        height: 1.7em;
+    }
+    .network{
+        position: absolute;
+        right:12%
+    }
+    .network img{
+        height: 13px;
+    }
+    .arrow{
+        margin-left: 20px;
+    }
+    .arrow img{
+        height:30px;
+    }
+    .side{
+        width: 35px;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width:400px) {
+    .BackG,
+    .arrow{
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/*
 @media only screen and (max-width: 1500px){
     .BackG{
         width: 17vw;
