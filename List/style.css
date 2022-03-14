@@ -1,0 +1,267 @@
+html{
+    background-color: beige;
+    font-family: 'Fauna One' 'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-left: 5%;
+    padding: 0;
+    overflow-x: hidden;
+    display: inline-flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100M;
+}
+/*Common//////////////////*/
+h1{
+    margin: 0;
+    font-family:'Cinzel Decorative', cursive;
+    font-size: 4em;
+    width: auto;
+}
+h2{
+    font-family:'Fauna One', serif;
+    color: rgb(170, 170, 170);
+    font-size: 17px;
+}
+h3{
+    font-size: 2em;
+}
+/*Side Bar/////////////////////*/
+.side{
+    display:flex;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 4%;
+    z-index: 50;
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
+    font-family:'League Gothic', sans-serif ;
+    font-size: 1.3em;
+}
+.side div{
+    transform: rotate(90deg);   
+    margin: 30px 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 0.9em;
+}
+.side div:hover{
+    border-bottom: 2px black solid;
+}
+.list{
+    border-bottom: 2px black solid;
+}
+/*Header//////////////////////////////*/
+header{
+
+    position: fixed;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 20;
+}
+body{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.LG{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Cinzel', serif;
+}
+.LG img{
+    height: 70px;
+}
+.network{
+    display: inline-flex;
+    margin-left: 50px;
+}
+.network img{
+    height: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    align-items: center;
+}
+.Name{
+    margin-left: 10px;
+}
+.title{
+    width: auto;
+    overflow: hidden;
+    margin-left: 50px;
+    width: 35vw;
+    padding: 50px 20px;
+    padding-right: 30px;
+    color: white;
+    background-color: #8a362d;
+}
+.title h2{
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+/*Body////////////////////////////*/
+main{
+    padding-top: 20%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 55%;
+    min-height: 50%;
+    align-items: center;
+    position: relative;
+    background-color: #caa5a1;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 25px;
+}
+.empty{
+    width: 40%;
+    height: 100%;
+}
+.days{
+    font-size: 1.5em;
+    margin-bottom: 300px;
+    font-family:'Fauna One', serif;
+    line-height: 2em;
+    
+}
+.days img{
+    height: 0.7em;
+    margin-left: 20px;
+}
+
+/*Footer///////////////////*/
+footer{
+    position:absolute;
+    bottom: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Fauna One', serif;
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.re{
+    font-size: 10px;
+    text-align: center;
+}  
+/*Responsive ///////////////////////////////////////////////*/
+@media only screen and (max-width:1300px){
+    header{
+    margin-left: 0%;
+    }
+    .empty{
+        height: 400px;
+        width: 37%;
+    }
+    .title{
+        width: 35vw;
+        margin-left: 0%;
+    }
+    h1{
+        font-size: 3vw;
+    
+    }
+    .title h2{
+        margin-top: 10px;
+    }
+    .LG{
+        width: 300px;
+    }
+    .LG h3{
+        font-size: 1.1em;
+    }
+    .LG img{
+        height: 5vw;
+    }
+    .network{
+        margin-left:70px ;
+        margin-top: -20px;
+    }
+    .network img{
+        height: 15px;
+    }
+    .side{
+        width: 35px;
+    }
+}
+@media only screen and (max-width:800px){
+    html{
+        margin-left: 35px;
+    }
+    body{
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    header{
+
+        position: relative;
+        width: 100%;
+        margin: 20px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0%;
+    }
+    .empty{
+        display: none;
+    }
+    .LG{
+        position:static;
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+        padding: 5%;
+        box-sizing: border-box;
+        margin: 0;
+        margin: 0 20px;
+        text-align: center;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .days{
+        font-size: 1em;
+        padding-top: 20px;
+    }
+    footer{
+        padding: 10px 20px;
+    }
+    .network{
+        position: absolute;
+        right: 0;
+        margin-top: 0
+    }
+    .network img{
+        height: 2vh;
+        margin-top: 0;
+    }
+
+}

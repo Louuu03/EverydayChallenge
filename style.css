@@ -264,7 +264,7 @@ a{
 
 @media only screen and (max-height: 850px) and (max-width:800px), only screen and (max-width: 800px) {
     html{
-        left: 5px;
+        left: 5%;
     }
     header{
         flex-direction: row;
