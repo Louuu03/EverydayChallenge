@@ -44,7 +44,7 @@ h3{
     z-index: 50;
     box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.589);
     font-family:'League Gothic', sans-serif ;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 .side div{
     transform: rotate(90deg);   
@@ -118,6 +118,8 @@ header{
     align-items: center;
     flex-shrink: 0;
     margin-top: 70px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .title{
     width: auto;
@@ -144,6 +146,8 @@ header{
 .BigGif{
     width: 100%;
     display: none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards ;
 }
 .arrow img{
     height: 50px;
@@ -156,7 +160,11 @@ header{
     color: rgba(0, 0, 0, 0.582);
     margin-right: 10%;
     opacity: 1;
-    margin-top: 70px;
+    margin-top: 70px;   
+    cursor: pointer;
+    opacity:0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -250,7 +258,6 @@ a{
     }
     .side{
         width: 35px;
-        font-size: 1em;
     }
 }
 
@@ -290,6 +297,7 @@ a{
         width: 200px;
         height: 200px;
         margin-left: 15%;
+        transform: translate(5%,0);
     }
     body{
         font-size: 1em;
@@ -326,7 +334,6 @@ a{
     }
     .side{
         width: 35px;
-        font-size: 1em;
     }
 }
 @media only screen and (max-width:400px) {
@@ -334,129 +341,40 @@ a{
     .arrow{
         margin-left: 20px;
     }
-}
-
-
-
-
-/*
-@media only screen and (max-width: 1500px){
     .BackG{
-        width: 17vw;
-        height: 17vw;
+    transform: translate(18%,0);    
     }
-    h1{
-        font-size: 2.5vw;
+    @keyframes backG {
+        0%{transform: translate(18%,0);}
+        100%{transform: translate(0,0);}
+    }
     
-    }
-    .title{
-            padding-left: 100px;
-    }
-    .title h2{
-        margin-top: 10px;
-    }
-    .BackG img{
-        height:2vw;
-    }
-    body{
-        background-color: aquamarine;
-        font-size: 1.5vw;
-        margin-top: 4vw;
-    }
-    header{
-        height: 28vw;
-        min-height: 300px;
-    }
-    .LG h3{
-        font-size: 1.1em;
-    }
-    .LG img{
-        height: 3vw;
-    }
-    .network img{
-        height: 17px;
-    }
-    .days img{
-        width: 150px;
-        height: 150px;
-    }
-    .empty{
-        height: 28vw;
-        min-height: 300px;
-    }
+}
+/* Animation////////////////////////////*/
+@keyframes arrow {
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+@keyframes backG {
+    0%{transform: translate(5%,0);}
+    100%{transform: translate(0,0);}
+}
+@keyframes change {
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+@keyframes again{
+    0%{opacity: 0;}
+    100%{opacity:1;}
 }
 
 
-@media only screen and (max-width: 788px){
-    .side{
-        width: 30px;
-    }
-    .BackG{
-        width: 250px;
-        height: 250px;
-        flex-shrink: 0;
-        }
-    .title{
-        padding-left:0;
-        margin: 0;
-        margin-top: 0;
-        width: auto;
-    }
-    h1{
-        font-size: 1.5em;
-        width: auto;
-    }
-    .arrow img{
-        height: 40px;
-    }
+
+.change .BigGif{
+    animation-name: change;
 }
-@media only screen and (max-width: 680px){
-    .header{
-        flex-direction: row;
-    }
-    .title{
-        width: 100%;
-    }
-    .BackG{
-        width: 250px;
-        height: 250px;
-        } 
+
+
+.again .BigGif{
+animation-name: again;
 }
-@media only screen and (max-height:1200px) {
-    h1{
-        font-size: 35px;
-    }
-    .title h2{
-        font-size: 15px;
-    }
-    .title{
-        padding-left: 10px;
-        width: 270px;
-    }
-}@media only screen and (max-height: 750px) {
-    footer{
-        margin-top: 50px;
-        position: static;
-    }
-    .BackG{
-    height: 220px;
-    width: 220px;
-    background-color: aquamarine;
-    }
-    header{
-        height: 30vh;
-        min-height: 300px;;
-    }
-    .empty{
-        height: 30vh;
-        min-height: 300px;
-    }
-}
-@media only screen and (max-height: 700px){
-    .title{
-        margin-top: 5vh;
-    }
-    footer{
-        margin-top: 80px;
-    }
-}*/

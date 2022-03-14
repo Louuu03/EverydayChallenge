@@ -9,7 +9,7 @@ I always found those animation on websites amazing, so I decided to dig into som
 However, I always have a lot of problems while coding. If anything confuses you and you can't find the answer of it, or you figure out mistakes or have better solution, feel free to reach me out on Tweeter([@Lou_yiw](https://twitter.com/Lou_yiw)).
 
 Here is the website of the challenge:
-[Everyday Little Challenge](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/index.html)
+[Everyday Little Challenge](https://louuu03.github.io/EverydayLilChallenge/index.html)
 
 ## Technologies
 
