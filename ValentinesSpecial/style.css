@@ -237,21 +237,6 @@ p{
     100%{opacity: 0;}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 5. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
     .BackG{
@@ -273,6 +258,10 @@ p{
     }
     .BackG img{
         height:2vw;
+    }
+    p{
+        font-size: 0.5em;
+        bottom: -20px;
     }
    
 }
@@ -318,6 +307,10 @@ p{
         height: 20px;
         position: absolute;
     }
+    p{
+        font-size: 0.5em;
+        bottom: -20px;
+    }
 }
 @media only screen and (max-width: 512px){
     .BackG{
@@ -326,6 +319,10 @@ p{
         } 
     h2{
         font-size: 0.75em;
+    }
+    p{
+        font-size: 0.5em;
+        bottom: -20px;
     }
 }
 @media only screen and (max-height: 700px){
