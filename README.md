@@ -23,6 +23,8 @@ Mainly CSS, plus some HTML and JavaScript.
 * [Day 3- Toggle Button](https://louuu03.github.io/EverydayLilChallenge/D3-ToggleButton/index.html)
 * [Day 4- Finish Button](https://louuu03.github.io/EverydayLilChallenge/D4-FinishButton/index.html)
 * [Day 5- BellRings](https://louuu03.github.io/EverydayLilChallenge/D5-BellRings/index.html)
+* [Valentine's Special](https://louuu03.github.io/EverydayLilChallenge/ValentinesSpecial/index.html)
+* [Day 7- Mail Sent](https://louuu03.github.io/EverydayLilChallenge/D7-MailSent/index.html)
 
 
 ## Source and Inspiration

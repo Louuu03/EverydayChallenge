@@ -434,7 +434,8 @@ footer{
         bottom: -20px;
     }
    .mail{
-       transform: scale(0.9);
+       transform: scale(0.8);
+       margin: 15%;
     }
     .circleC{
         top: -10%;
@@ -501,6 +502,7 @@ footer{
     }
     .mail{
         transform: scale(0.7);
+        margin: 10%;
     }
 }
 @media only screen and (max-height: 700px){

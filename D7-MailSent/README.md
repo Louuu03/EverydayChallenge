@@ -1,10 +1,10 @@
-# Day 7 Mail Sent
+# Valentine's Special
 
 ## Introduction
 
 It is a animated Heart Beat. It stops beating when you click on it.
 
-Here is the website: [ Day 7- Mail Sent](https://louuu03.github.io/EverydayLilChallenge/D7-MailSent/index.html)
+Here is the website: [Valentine Special](https://louuu03.github.io/EverydayLilChallenge/ValentinesSpecial/index.html)
 
 
 ![alt text](./Icon/gif.gif)
@@ -16,7 +16,7 @@ Mainly CSS, plus some HTML and JavaScript.
 
 
 ## HighLights
-I hope I made it Hogwarts' theme.
+Just for White Valentine's Day.
 
 ## Problem faced
 N/A

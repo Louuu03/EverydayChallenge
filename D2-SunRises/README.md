@@ -12,7 +12,7 @@ Here is the website: [Day 2- Sun Rises](https://louuu03.github.io/EverydayLilCha
 
 ## Technologies
 
-Mainly CSS, plus some HTML and JavaScript.
+Mainly CSS, plus some HTML.
 
 
 ## HighLights
