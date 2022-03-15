@@ -265,7 +265,7 @@ a{
 
 @media only screen and (max-height: 850px) and (max-width:800px), only screen and (max-width: 800px) {
     html{
-        left: 5%;
+        padding-left: 10px;
     }
     header{
         flex-direction: row;
@@ -325,7 +325,7 @@ a{
         right:12%
     }
     .network img{
-        height: 13px;
+        height: 2vh
     }
     .arrow{
         margin-left: 20px;
