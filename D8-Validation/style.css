@@ -188,16 +188,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* 5. Responsive ///////////////////////////////////////////////*/
 @media only screen and (max-width: 1500px){
     .BackG{
@@ -272,6 +262,14 @@ footer{
         } 
     h2{
         font-size: 0.75em;
+    }
+    .all{
+        transform: scale(0.7);
+        font-size: 20px;
+    }
+    .word{
+        font-size: 20px;
+        width: 220px;
     }
 }
 @media only screen and (max-height: 700px){
