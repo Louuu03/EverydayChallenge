@@ -1,10 +1,12 @@
-# Day 1 Menu Icon
+# Day 8 Validation
 
 ## Introduction
 
-It is a animated menu icon if you click on it.
+My closed ones always say that I don't really give out enough affirmation and validation to them.
+I do appriciate and admire them, just not in an explicit way.
+So here you go, this is a carousel of those validation.
 
-Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilChallenge/D1-MenuIcon/MenuIcon.html)
+Here is the website: [Day 8- Validation](https://louuu03.github.io/EverydayLilChallenge/D8-Validation/index.html)
 
 
 ![alt text](./Icon/gif.gif)
@@ -12,16 +14,14 @@ Here is the website: [Day 1- Menu Icon](https://louuu03.github.io/EverydayLilCha
 
 ## Technologies
 
-Mainly CSS, plus some HTML and JavaScript.
+Mainly Javascript, plus some HTML and Css.
 
 
 ## HighLights
 
-* Easy JavaScript to toggle
-    1. ```classList.add``` and  ```classList.remove```
-    2. A class only in CSS to call animation by using codes above
+* Using ```setTimeout``` with ```for``` loop to let the words in the carousel change with a certain interval.
 
 
 ## Problem faced
 
-* How to use ``` classList.toggle ``` to make the animation reverse to the origin status?
+N/A

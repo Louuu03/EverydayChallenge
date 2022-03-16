@@ -2,7 +2,7 @@
 
 ## Introduction
 
-It is a animated Heart Beat. It stops beating when you click on it.
+It is a animation of an mail after you press on the send button.
 
 Here is the website: [D7- MailSent](https://louuu03.github.io/EverydayLilChallenge/D7-MailSent/index.html)
 

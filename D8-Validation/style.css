@@ -134,6 +134,7 @@ footer{
     font-family:'Fauna One', serif;
     font-size: 25px;
     font-weight: 800;
+    transform: scale(1.2);
 }
 .sentence{
     display: inline-flex;
@@ -150,6 +151,7 @@ footer{
     color: white;
     text-shadow: 1px 1px 3px black;
     text-transform: uppercase;
+    text-align: center;
 }
 .w1{
     animation: first 2s forwards;
@@ -210,8 +212,40 @@ footer{
     .BackG img{
         height:2vw;
     }
+    .all{
+        transform: scale(0.9);
+    }
+    .word{
+        width: 180px;
+        padding-left: 0px;
+    }
+    .w1,
+    .w2,
+    .w3{
+        width: 180px;
+    }
+    .sentence{
+        width: auto;
+    }
    
 }
+@media only screen and (max-width: 950px) {
+    .all{
+        transform: scale(0.8);
+        font-size: 20px;
+    }
+    .word{
+        width: 180px;
+        padding-left: 0px;
+    }
+    .w1,
+    .w2,
+    .w3{
+        width: 180px;
+        font-size: 25px;
+    }
+}
+
 
 @media only screen and (max-height: 700px) {
     footer{
@@ -254,6 +288,21 @@ footer{
         height: 20px;
         position: absolute;
     }
+    .all{
+        transform: scale(0.9);
+        font-size: 25px;
+    }
+    .word{
+        font-size: 25px;
+        width: 160px;
+        padding-left: 0px;
+    }
+    .w1,
+    .w2,
+    .w3{
+        width: 160px;
+    }
+
 }
 @media only screen and (max-width: 512px){
     .BackG{
@@ -264,12 +313,8 @@ footer{
         font-size: 0.75em;
     }
     .all{
-        transform: scale(0.7);
+        transform: scale(0.8);
         font-size: 20px;
-    }
-    .word{
-        font-size: 20px;
-        width: 220px;
     }
 }
 @media only screen and (max-height: 700px){
