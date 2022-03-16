@@ -324,11 +324,9 @@ footer{
    
 }
 
-@media only screen and (max-height: 700px) {
-    footer{
-        margin-top: 50px;
-        position: static;
-    }
+footer{
+    margin-top: 150px;
+    position: static;
 }
 
 @media only screen and (max-width: 788px){
@@ -380,6 +378,7 @@ footer{
         margin-top: 5vh;
     }
     footer{
-        margin-top: 80px;
+        margin-top: 150px;
+        position: static;
     }
 }
