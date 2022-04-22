@@ -358,8 +358,8 @@ a{
     100%{opacity:1;}
 }
 @keyframes backG {
-    0%{transform: translate(5%,0);}
-    100%{transform: translate(0,0);}
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-5%,0);}
 }
 @keyframes change {
     0%{opacity: 0;}
